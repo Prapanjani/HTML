@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <style type="text/css">
+    .slider{
+      width:400px;
+      height: 400px;
+      margin:20px auto;
+      text-align: center;
+      padding:20px;
+      color:white;
+    }
+  .parent-slide{
+    padding:15px;
+  }
+  img{
+    display: block;margin:auto;
+  }
+
+  </style>
+  </head>
+  <body>
+
+ <div class="slider fade">
+  <div><div class="image"><img src="img/gallery/980x380/001.jpg"/></div></div>
+  <div><div class="image"><img src="img/gallery/980x380/002.jpg"/></div></div>
+  <div><div class="image"><img src="img/gallery/980x380/003.jpg"/></div></div>
+</div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+
+  </body>
+</html>
